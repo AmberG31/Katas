@@ -8,9 +8,16 @@ Number of orders is always equal to number of people.
 For example,
 
 input (budget, people) || output
+10, 4 || -1
+100, 0 || -1
 200, 9 || 2
-200, 9 || 3
+300, 9 || 3
 
 budget, people => (200, 9) will return 2.
-
 budget, people => (300, 9) will return 3 and so on.
+
+basic buffet - $15
+economy buffet - $20
+premium buffet - $30 || 20% discount if people > 60
+
+return -1 if people = 0 or budget < 15
